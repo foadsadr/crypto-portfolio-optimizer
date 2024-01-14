@@ -1,8 +1,8 @@
 # Crypto Portfolio Optimizer
-Cryptocurrensies portfolio optimizer and simulator
+Cryptocurrencies portfolio optimizer and simulator
 
 ## Description
-Welcome to the Cryptocurrency Portfolio Optimizer – a dynamic tool designed for investors stepping into the world of cryptocurrencies. This project is an essential guide for those uncertain about which assets to include in their portfolio. By leveraging a powerful simulation (backtest) mechanism, it provides a data-driven approach to asset allocation.
+Welcome to the Cryptocurrency Portfolio Optimizer – a dynamic tool designed for investors stepping into the world of cryptocurrencies. This project is an essential guide for those uncertain about which assets to include in their portfolio. By leveraging a powerful simulation (backtest) mechanism, provides a data-driven approach to asset allocation.
 
 ## Key Features
 - Personalized Portfolio Simulation: Input your candidate cryptocurrencies and a specific time interval, and our tool will simulate (backtest) how these coins have performed historically.
@@ -21,16 +21,18 @@ Investing in cryptocurrencies can be daunting due to their volatile nature. This
 
 ## Installation
 First, clone the repository and then run the following command.
+
 ```pip3 install -r requirements.txt```
 
 ## Usage
 Just run the following command.
+
 ```python3 main.py```
 
 ## Config
 You can change the `config.py` file to change the simulation parameters.
-- `CANDIDATE_COINS` is a list of coins which you want you buy them. 
+- `CANDIDATE_COINS` is a list of coins that you want to buy. 
 - `WEIGHTS_STEP_PRECISION_PERCENT`: if you set you set it to 20, your portfolio might be something like this: 20% BTC, 40% ETH, 60% ETH (each weight will be a factor of 20%)
-- `SIMULATION_START_DATE` indicates the start time interval of simulation.
-- `SIMULATION_END_DATE` indicates the end time interval of simulation.
+- `SIMULATION_START_DATE` indicates the start time interval of the simulation.
+- `SIMULATION_END_DATE` indicates the end time interval of the simulation.
 - `START_WALLET_SIZE_USD` indicates the total amount of money (in the US Dollars) you want to invest.
